@@ -29,7 +29,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
       
-      - name: Build, tag and push image to amazon ecr
+      - name: Build, tag, and push image to amazon ecr
         id: build-image
         env:
           IMAGE_TAG: ${{github.sha}}
